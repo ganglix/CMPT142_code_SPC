@@ -10,6 +10,7 @@ print(
 
 # (b) Remove "!" characters and whitespace from nation
 
+
 # (c) Find the location of the first "Sea" substring in nation_motto
 
 )
