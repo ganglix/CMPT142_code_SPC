@@ -40,5 +40,5 @@ print(s[-5:])  # end at all they way to boundary(right)
 print(s[1::3])
 
 # (e) the last five characters of s in reverse, i.e. "worrA".
-print(s[-1:-6:-1])  # both case use -1 step: right to left
+print(s[-1:-6:-1])  # both cases use -1 step: right to left
 print(s[10:5:-1])
