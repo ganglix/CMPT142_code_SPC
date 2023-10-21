@@ -1,0 +1,8 @@
+math: f(x) = x/2
+f: function name
+x: parameter
+this function will return the half of whatever passed to this function
+
+result = f(3)
+augument: 3
+return: result: 1.5
