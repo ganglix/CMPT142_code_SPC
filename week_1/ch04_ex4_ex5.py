@@ -7,15 +7,16 @@ s = "Fiction"
 print(
     s[1:3],
 
-    s[-4:10],
+    s[-4:10],   # when you have mixture of +/- indices you only look at the position
+                # [wrong]-4 -3 -2 -1, 0, 1...6,    ! 7 8, 9
 
     s[0:len(s):2],
 
-    s[0:len(s):-1],
+    s[0:len(s):-1],  # returns "", slice indices do not make sense, return ""
 
-    s[len(s):-8:-1],
+    s[len(s):-8:-1], # right(out of range) to left(out of range)
 
-    sep="\n"
+    sep="\n"  # newline, meaning print a newline between the items printed
 )
 
 

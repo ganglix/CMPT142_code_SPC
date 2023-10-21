@@ -13,4 +13,5 @@ s = "A Song Of Ice And Fire"
 # (b) the eleventh character in s, i.e. ’I’
 # (c) the last character in s, i.e. ’e’
 
-# print(s[-1])
+print(s[-1])
+print(s[len(s)-1])
