@@ -9,6 +9,6 @@ print(
     not b and c,
     b or not c,
     b and c or a,
-    b or c and a
+    c or b and a  # do and first then or  # NAO, use redundant () to ensure and then or
 )
 
