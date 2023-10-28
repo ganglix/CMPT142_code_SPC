@@ -12,11 +12,11 @@ url = "www.engineering.usask.ca"
 
 #
 # remove white space
-# .strip(), .rstrip(), .lstrip()
-#
+
+
 # count the number of characters in the url after removing "www."
-# (gotta be careful - don’t just assume a function does what you think!)  usb-str vs. chars
-# args are that chars considered as "garbage
+# (gotta be careful - don’t just assume a function does what you think!)
+
 
 # # more methods:
 
