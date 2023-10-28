@@ -1,8 +1,20 @@
 # In this demonstration we will show how to use the console
-# input function to obtain answers to simple questions and
-# convert the input to the desired data type.
+# display on console
 
+# print("hello world")
+#
+# returned_value = print("hello world")
+#
+# print("returned_value:", returned_value)
+
+
+# input function to obtain answers to simple questions and
 # # example 1
+
+# convert the input to the desired data type.
+# user_input = float(input("please type a number:"))  # input() always return a string
+# print("Your number is:", user_input)
+# print("the square root of your number is", user_input**(1/2))
 
 
 # example 2
@@ -10,7 +22,7 @@
 # title
 print("If I Were Super Wealthy Simulator")
 print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-print()
+print()   # prints an empty newline
 
 # prompt user for their name
 name = input("What is your name?: ")

@@ -17,10 +17,25 @@ cash = 50
 
 #
 # (c)
-# print("One blanket and two pillows will cost $",
-#       blanket_cost + pillow_cost * 2, ". If I pay with $", cash,
-#       ", I will have $", (cash - (blanket_cost + pillow_cost * 2)),
-#       " left.", sep="")
-#
-# print(f"One blanket and two pillows will cost ${blanket_cost + pillow_cost * 2}. If I pay with ${cash}")
+print("One blanket and two pillows will cost $",
+      blanket_cost + pillow_cost * 2, ". If I pay with $", cash,
+      ", I will have $", (cash - (blanket_cost + pillow_cost * 2)),
+      " left.")  # by default print(a, b) will print a space between these arguments
+
+print("One blanket and two pillows will cost $",
+      blanket_cost + pillow_cost * 2, ". If I pay with $", cash,
+      ", I will have $", (cash - (blanket_cost + pillow_cost * 2)),
+      " left.", sep="")
+
+# starting python 3.6 f-string, formatted string
+price = 1000
+print("This computer costs me", "$", price, '.')
+print("This computer costs me " + "$" + str(price) + '.')
+print("This computer costs me ", "$", price, '.', sep="")
+
+# f-string
+print(f"This computer costs me ${price}.")
+
+
+print(f"One blanket and two pillows will cost ${blanket_cost + pillow_cost * 2}. If I pay with ${cash}.")
 
