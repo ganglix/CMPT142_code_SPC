@@ -4,19 +4,20 @@
 # "Dog" has an odd number of characters.
 
 def check_char(s):
-    if len(s)%2 == 0: # even
+    if len(s) % 2 == 0:  # even
         check = "even"
     else:
-        check ="odd"
+        check = "odd"
     print(f"{s} has an {check} number of chars")
 
 
 def check_char_user_input():
     s = input("please type a word: ").strip()
-    if len(s)%2 == 0: # even
+    if len(s) % 2 == 0:  # even
         check = "even"
     else:
-        check ="odd"
+        check = "odd"
     print(f"{s} has an {check} number of letters")
+
 
 check_char_user_input()
