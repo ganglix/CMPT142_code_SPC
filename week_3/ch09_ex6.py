@@ -24,10 +24,20 @@
 # while dividend % divisor != 0:
 #     divisor = divisor + 1
 
+# for dividend in range(5000,5100):
+#     divisor = 2
+#     while dividend % divisor != 0:
+#         divisor = divisor + 1
+#     if divisor == dividend:
+#         print(f"{dividend} is prime")
+    # else:
+    #     print(f"{dividend} is not prime, as it is divisible by {divisor}")
+
+
 # (e)
-# low = -100
-# high = 100
-# msg = " Enter int between " + str(low) + " to " + str(high) + ":"
-# num = int(input(msg))
-# while num >= low or num <= high:
-#     num = int(input(msg))
+low = -100
+high = 100
+msg = " Enter int between " + str(low) + " to " + str(high) + ":"
+num = int(input(msg))
+while num >= low or num <= high:
+    num = int(input(msg))
