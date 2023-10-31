@@ -1,32 +1,30 @@
-
 # lists and tuples
 
 # create a list
-L = [ 1, 2, 3]
+L = [1, 2, 3]
 # array
 import numpy as np
+
 arr = np.array(L)
 
 print(L * 3)  # [1, 2, 3, 1, 2, 3, 1, 2, 3]
-print(arr * 3) # [3 6 9]
+print(arr * 3)  # [3 6 9]
 
-lis = [1, 2, 'apple', max, arr, L, [] ] # container for anything
-
+lis = [1, 2, 'apple', max, arr, L, []]  # container for anything
 
 # indexing and slicing, same as string, or other sequences
 print(L[0])
 print(L[1:])
 print(L[-1])
 
-
 # methods
 # add an item: .append(), +, .extend()
 print("before", L)
-L.append("item") # does not return anything! it adds "item" to the list
+L.append("item")  # does not return anything! it adds "item" to the list
 print("after", L)
 # list is our first mutable data type, change happens "in-place"
 
-L.extend(["garbage1", "garbage2"]) # same as +
+L.extend(["garbage1", "garbage2"])  # same as +
 print(L)
 
 # remove an item: .remove(), del, .pop()
@@ -50,7 +48,7 @@ print(L)
 L.sort(reverse=True)
 print(L)
 
-new_L = sorted(L) # sort and return a sorted list, and does not change L
+new_L = sorted(L)  # sort and return a sorted list, and does not change L
 print(L)
 print(new_L)
 
@@ -65,7 +63,7 @@ print(new_L)
 
 # let use .sort() without changing the old L [right way]
 print(L)
-L2 = L.copy()   # create a new L (clone) identical to L
+L2 = L.copy()  # create a new L (clone) identical to L
 # another way to create a clone is L[:], but this method does not work for array
 print("L before", L)
 print("L2 before", L2)
@@ -76,7 +74,21 @@ print("L should not change:", L)
 # list is mutable ! more examples in flowtrace observations
 
 
+# flowtrace
 
+L = [1, 2, 3, 4, 5, 6]
+for value in L:
+    L.remove(value)
+print(L)
 
-
-
+"""
+L = [1, 2, 3, 4, 5, 6]
+for value in [1, 2, 3, 4, 5, 6]:
+    value = 1 # first  of [1, 2, 3, 4, 5, 6]
+    [1, 2, 3, 4, 5, 6].remove(1)
+    value = 3 # second of [2, 3, 4, 5, 6]
+    [2, 3, 4, 5, 6].remove(3)
+    value = 5 # third of [2, 4, 5, 6]
+    [3, 4, 5, 6].remove(5)
+print([2, 4, 6])
+"""
