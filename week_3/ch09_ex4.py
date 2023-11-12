@@ -10,3 +10,14 @@
 M = 10
 N = 5
 
+# # print first row
+# y = 0
+# for x in range(M): # 0 1 2... 9
+#     print(f"({x},{y})", end = " ")
+
+# print first row
+for y in range(N):
+    for x in range(M):  # 0 1 2... 9
+        print(f"({x},{y})", end=" ")
+    print()  # new line
+

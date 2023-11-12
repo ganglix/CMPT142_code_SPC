@@ -18,12 +18,23 @@ msgs = [["Forgot the recipe again! #nofood", 3],
 
 # (a) create list food_msgs of messages containing "#food"
 
-
 # list comprehension
 # [item_to_put_in_the_new_list for iterator in sequence]
 # [item_to_put_in_the_new_list for iterator in sequence if condition]
+
+food_msgs = [m for m in msgs if "#food" in m[0].lower()]   # m is the msg sublist
+print(food_msgs)
+
+# # for loop
+# food_msgs=[]
+# for m in msgs:
+#     if "#food" in m[0].lower():
+#         food_msgs.append(m)
 
 
 # (b) create a new copy of food_msgs where messages are
 # appended with "#yawn" to the message
 
+food_msgs_yawn = [[ m[0]+" #yawn" , m[1] ]  for m in food_msgs]
+
+print(food_msgs_yawn)

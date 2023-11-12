@@ -11,11 +11,18 @@ a2 b2 c2 d2 e2 f2 g2 h2
 a1 b1 c1 d1 e1 f1 g1 h1
 """
 
+# # just print the first row
+# row = 8
+# for col in "abcdefgh":
+#     print(f"{col}{row}", end=" ")  # print() by default, print a new line at the end: print(, end="\n")
 
+#  print all rows
+for row in range(8, 0, -1):  # 8 7 6...1
+    for col in "abcdefgh":
+        print(f"{col}{row}", end=" ")  # print() by default, print a new line at the end: print(, end="\n")
 
-
-
-
+    # when we finish a row and moving to the next row
+    print()  # print a newline
 
 
 
