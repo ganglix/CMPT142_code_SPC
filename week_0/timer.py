@@ -7,4 +7,4 @@ def print_time(m):
         s -= 1
         print(f"time: {s//60}: {s % 60}")
 
-print_time(5)
+print_time(40)
