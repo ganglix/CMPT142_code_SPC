@@ -15,7 +15,7 @@ def cost_phone_call(call_duration):
     # compute cost of call after first ten minutes
     # (only counts full minutes)
     cost = cost + remaining_duration / 1 * 0.25
-
+    print(f"before 10% off, the cost is {cost}")
     # discount from plan deducts 10% from total cost
     cost = cost * 0.9
 

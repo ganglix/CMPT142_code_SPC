@@ -30,11 +30,20 @@ def cost_phone_call(call_duration):
 
 
 # test case
-# inputs = 11.15
-# expected_outputs = 5.04
-#
-# bill = cost_phone_call(inputs)
-# if bill != expected_outputs:
-#     print(f"Fault found!, input: {inputs}, expected: {expected_outputs}, got: {bill}")
+inputs = 11.15
+expected_outputs = 5.04
+
+bill = cost_phone_call(inputs)
+if bill != expected_outputs:
+    print(f"Fault found!, input: {inputs}, expected: {expected_outputs}, got: {bill}")
 
 
+# return a dict counts vowels in a string
+s = "ajsdkfhowieeeru"
+count = {}
+for char in s.lower():
+    if char in "aeiou":
+        if char not in count:
+            count[char] = 0
+        count[char] += 1
+print(count)
