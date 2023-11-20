@@ -21,13 +21,22 @@ books = [
 ]
 
 # open for writing
+filename = "my_books.txt"
 
+f = open(filename, "w")   # creates a file with write mode (over writing)   to append: 'a'
 
 # for each book , write its title , author , year published in that order
-
+for book in books:  # book is {}
+    # line_to_write = book['title'] + ',' + book['author'] + ',' + str(book['year_published'])
+    line_to_write = ",".join([book['title'],
+                              book['author'],
+                              str(book['year_published'])])
+    # print(line_to_write)
+    f.write(line_to_write)
+    f.write('\n')   # instruct f.write() to write to new line
 
 # done writing , close file
-
+f.close()
 
 
 
