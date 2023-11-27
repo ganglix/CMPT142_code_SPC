@@ -1,20 +1,20 @@
 
 # N! = N * (N-1)!
-# 3! = 3 * 2 * 1
-# 2! = 2 * 1
-# 1! = 1 * 1
-# 0! = 1
+# 3! = 3 * 2 * 1  = 3 * 2!
+# 2! = 2 * 1 = 2 * 1!
+# 1! = 1 = 1 * 0!   # not special, still follow the rule
+# 0! = 1   # special
 
 def factorial_a(N):
-    # base case
     if N < 0:
         return None
+    # base case
     elif N == 0:
         return 1
     else:
         # recursive case
         # reduced problem being delegated is factorial_a(N - 1)
-        return factorial_a(N - 1) * N
+        return factorial_a(N - 1) * N   # N!
 
 
 # print(factorial_a(3))
@@ -35,10 +35,12 @@ def factorial_b(N):
         return factorial_b(N - 1) * N
     else:
         # base case ( most reduced case )
-        return 1
+        return 1   # N = 0
 
-# print(factorial_b(3))
+print(factorial_b(3))
 
 
 
 # which one is better?
+# print(factorial_a(-1))  # error   # better (maybe)
+# print(factorial_b(-1))    # returns 1, but wrong, because -1! is not defined
