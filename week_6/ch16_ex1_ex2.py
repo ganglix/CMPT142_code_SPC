@@ -7,7 +7,7 @@
 
 def factorial_a(N):
     if N < 0:
-        return None
+        return None   # handle potenial unreasonable negative argument
     # base case
     elif N == 0:
         return 1
