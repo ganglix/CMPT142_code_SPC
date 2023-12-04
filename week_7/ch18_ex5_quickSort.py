@@ -19,6 +19,21 @@ def quick_sort(S):
     :param S: a list to be sorted
     :return: sorted list
     """
+    if len(S) <= 1:
+        return S
+    else:
+        pivot = S[-1] # e.g. the last item of S
+        # L = items in S smaller than pivot
+        # G = items in S larger than pivot
+        # E = items in S equal to the pivot
+
+
+        # recursively solve the sub -problems of sorting L and G
+        quickSort(L)
+        quickSort(G)
+
+        S = L + E + G # (where + represents concatenation)
+        return S
 
 
 

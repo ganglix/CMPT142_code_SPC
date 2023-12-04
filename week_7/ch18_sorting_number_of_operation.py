@@ -17,20 +17,20 @@ quick_worst = n**2
 plt.figure(figsize=(12, 8))
 
 # Insertion Sort
-plt.fill_between(n, insertion_best, insertion_worst, color='skyblue', alpha=0.5, label='Insertion Sort Best-Worst')
+plt.fill_between(n, insertion_best, insertion_worst, color='C0', alpha=0.5, label='Insertion Sort Best-Worst')
 
 # Merge Sort
-plt.plot(n, merge_best_worst, color='green', alpha=1, label='Merge Sort Best-Worst')
+plt.plot(n, merge_best_worst, color='k', alpha=1, label='Merge Sort Best-Worst')
 
 # Quick Sort
 slice = int(len(n)*0.9)
-plt.fill_between(n[:slice], quick_best[:slice], quick_worst[:slice], color='salmon', alpha=0.2, label='Quick Sort Best-Worst')
+plt.fill_between(n[:slice], quick_best[:slice], quick_worst[:slice], color='C1', alpha=0.8, label='Quick Sort Best-Worst')
 
 # Titles and Labels
-plt.title('Number of Operations for Sorting Algorithms (Best vs Worst Case)')
-plt.xlabel('List Size (n)')
-plt.ylabel('Number of Operations')
-plt.legend()
+plt.title('Number of Operations for Sorting Algorithms (Best vs Worst Case)', fontsize=20)
+plt.xlabel('List Size (n)', fontsize=20)
+plt.ylabel('Number of Operations', fontsize=20)
+plt.legend(loc = "best", fontsize=12)
 plt.yscale('log')  # Set the y-axis to a logarithmic scale for better visualization
 
 # Show the plot
