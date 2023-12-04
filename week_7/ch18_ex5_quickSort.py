@@ -26,17 +26,26 @@ def quick_sort(S):
         # L = items in S smaller than pivot
         # G = items in S larger than pivot
         # E = items in S equal to the pivot
-
+        L = []
+        G = []
+        E = []
+        for item in S:
+            if item > pivot:
+                G.append(item)
+            elif item < pivot:
+                L.append(item)
+            else:
+                E.append(item)
 
         # recursively solve the sub -problems of sorting L and G
-        quickSort(L)
-        quickSort(G)
+        L_sorted = quick_sort(L)
+        G_sorted = quick_sort(G)
 
-        S = L + E + G # (where + represents concatenation)
+        S = L_sorted + E + G_sorted # (where + represents concatenation)
         return S
 
 
-
+print(quick_sort([2, 1, 4, 3]))
 
 
 

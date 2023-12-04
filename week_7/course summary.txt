@@ -86,7 +86,7 @@ Searching                          membership, retrieval (look-up)      apply th
 
 Week 7
 ------
-Sorting                            insertion sort,
+Sorting                            insertion sort(will not be tested)
                                    merge sort                           draw recursion tree (diagram) divide and conquer
                                    quick sort                           code up in recursive functions
                                    sort algorithm efficiency
